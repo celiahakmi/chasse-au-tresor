@@ -13,6 +13,11 @@ public class Simulation {
         agents.add(new Explorateur(terrain, 2, 2));
         //les ressources sur le terrain
         terrain.setCase(8, 8, new Tresor(100));
+        terrain.setCase(5, 5, new Tresor(100));
+        terrain.setCase(3, 3, new Tresor(100));
+        terrain.setCase(2, 7, new Tresor(100));
+        terrain.setCase(1, 2, new Tresor(100));
+
         terrain.setCase(2,2, new Algue(5));
         terrain.setCase(5,7, new Algue(2));
     }
