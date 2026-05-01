@@ -3,6 +3,6 @@ public class Main{
         Terrain terrain= new Terrain (10,10);
         Simulation simulation= new Simulation(terrain);
 
-        simulation.run(5);
+        simulation.run(10);
     }
 }
