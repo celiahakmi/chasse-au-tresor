@@ -4,7 +4,7 @@ public class Explorateur extends Agent{
         super(terrain,l,c);
     }
 
-    public void agir(){
+    public void agir() throws HorsMerException{
     int targetL = 8;
     int targetC = 8;
 
