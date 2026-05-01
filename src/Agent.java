@@ -1,4 +1,4 @@
-public abstract class Agent{
+public abstract class Agent{ Et
     protected Terrain terrain;
     protected int lig;
     protected int col;
@@ -15,10 +15,14 @@ public abstract class Agent{
         return Math.sqrt(dx*dx + dy*dy);
     }
 
-    public void seDeplacer(int l, int c){
+    public void seDeplacer(int l, int c)throws HorsMerException {
+        if (l<0 || l>=10 || c<0 || c>=10){
+            throw new HorsMerException("L'agent veut sortir de la mer ! ("+l+", "+c+")");
+        }
         this.lig=l;
         this.col=c;
+        Statistique.getInstance().nbDeplacements ++;
     }
 
-    public abstract void agir();
+    public abstract void agir() throws HorsMerException;
 }
