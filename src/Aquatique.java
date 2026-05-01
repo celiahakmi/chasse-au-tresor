@@ -1,3 +1,3 @@
 public interface Aquatique {
-    void agirSurTerrain();
+    void evoluer();
 }
