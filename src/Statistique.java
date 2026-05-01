@@ -6,7 +6,7 @@ public class Statistique {
 
     private Statistique(){}
 
-    public static Statistique getIstance(){
+    public static Statistique getInstance(){
         if(instance==null){
             instance=new Statistique();
         }
