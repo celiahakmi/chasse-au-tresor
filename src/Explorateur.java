@@ -5,24 +5,25 @@ public class Explorateur extends Agent{
     }
 
     public void agir() throws HorsMerException{
-    int targetL = 8;
-    int targetC = 8;
+        int targetL = 8;
+        int targetC = 8;
+        int newL = lig;
+        int newC = col;
+        //calcul du prochain pas
+        if (lig < targetL) newL++;
+        else if (lig > targetL) newL--;
 
-    int newL = lig;
-    int newC = col;
+        if (col < targetC) newC++;
+        else if (col > targetC) newC--;
 
-    if (lig < targetL) newL++;
-    else if (lig > targetL) newL--;
+        seDeplacer(newL, newC);
+        System.out.println("Explorateur → (" + newL + "," + newC + ")");
 
-    if (col < targetC) newC++;
-    else if (col > targetC) newC--;
-
-    seDeplacer(newL, newC);
-
-    System.out.println("Explorateur → (" + newL + "," + newC + ")");
-
-    if (newL == targetL && newC == targetC) {
-        System.out.println("TRÉSOR TROUVÉ !");
-    }
+        Ressource res= terrain.getCase(this.lig, this.col);
+        if (res instanceof Tresor){
+            System.out.println("LE TRESOR EST TROUVÉ !");
+            Statistique.getInstance().nbTresors++;
+            terrain.viderCase(this.lig,this.col);
+        }
     }
 }
