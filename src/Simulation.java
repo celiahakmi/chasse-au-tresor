@@ -17,8 +17,7 @@ public class Simulation {
     }
 
     public void step() {
-        System.out.println("=== STEP ===");
-
+        System.out.println("=== ETAPE DE SIMULATION ===");
         for (Agent a : agents) {
             a.agir();
         }
