@@ -1,5 +1,5 @@
-public class Algue extends Ressource {
-    
+public class Algue extends Ressource implements Aquatique {
+
     public Algue (int quantite){
         super("ALGUE", quantite);
     }
