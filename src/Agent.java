@@ -1,4 +1,4 @@
-public abstract class Agent{ Et
+public abstract class Agent{ 
     protected Terrain terrain;
     protected int lig;
     protected int col;
