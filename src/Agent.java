@@ -16,12 +16,12 @@ public abstract class Agent{ Et
     }
 
     public void seDeplacer(int l, int c)throws HorsMerException {
-        if (l<0 || l>=10 || c<0 || c>=10){
+        if (l<1 || l>=20 || c<1 || c>=20){
             throw new HorsMerException("L'agent veut sortir de la mer ! ("+l+", "+c+")");
         }
         this.lig=l;
         this.col=c;
-        Statistique.getInstance().nbDeplacements ++;
+        Statistique.getInstance().nbDeplacements++;
     }
 
     public abstract void agir() throws HorsMerException;
