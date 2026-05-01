@@ -1,3 +1,9 @@
+/**
+ * HAKMI CELIA
+ * Classe représentant un explorateur sous-marin.
+ * Hérite d'Agent et implémente la recherche de trésors.
+ */
+
 public class Explorateur extends Agent{
     
     public Explorateur(Terrain terrain, int l, int c){
