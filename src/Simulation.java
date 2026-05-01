@@ -4,16 +4,17 @@ public class Simulation {
 
     private Terrain terrain;
     private ArrayList<Agent> agents;
-    private ArrayList<Ressource> ressources;
 
     public Simulation(Terrain terrain) {
         this.terrain = terrain;
         this.agents = new ArrayList<>();
-        this.ressources = new ArrayList<>();
-
+        //les agents
+        agents.add(new Explorateur(terrain, 0, 0));
         agents.add(new Explorateur(terrain, 1, 1));
-
-        terrain.setCase(8, 8, new Tresor(10));
+        //les ressources sur le terrain
+        terrain.setCase(8, 8, new Tresor(100));
+        terrain.setCase(2,2, new Algue(5));
+        terrain.setCase(5,7, new Algue(2));
     }
 
     public void step() {
