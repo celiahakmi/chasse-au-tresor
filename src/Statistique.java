@@ -1,3 +1,9 @@
+/**
+ * HAKMI CELIA
+ * Singleton gérant les statistiques globales de la simulation.
+ * Enregistre le nombre de trésors trouvés et les déplacements effectués.
+ */
+
 public class Statistique {
     
     private static Statistique instance=null;
