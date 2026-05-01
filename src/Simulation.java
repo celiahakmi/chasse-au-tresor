@@ -30,7 +30,7 @@ public class Simulation {
         }
     }
 
-    // 🌪️ TEMPÊTE : déplacement des ressources
+    //déplacement des ressources
     public void deplacerRessourcesAleatoirement(int intensite) {
 
         for (int i = 0; i < ressources.size(); i++) {
@@ -46,7 +46,7 @@ public class Simulation {
         System.out.println("Les ressources ont été déplacées par la tempête");
     }
 
-    // 🌪️ TEMPÊTE : blocage agents
+    //blocage agents
     public void bloquerAgents(int intensite) {
 
         for (Agent a : agents) {
