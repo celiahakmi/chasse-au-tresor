@@ -18,13 +18,11 @@ public class Tempete {
     /**
      * Applique les effets de la tempête sur la simulation.
      */
-    public void agir(Simulation sim) {
+    public void declencher(Simulation sim) {
 
         System.out.println("\nUne tempête frappe la mer! Intensité = " + intensite);
 
-        sim.deplacerRessourcesAleatoirement(intensite);
-
-        sim.bloquerAgents(intensite);
+        sim.declencherTempete();
 
     }
 }
