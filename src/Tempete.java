@@ -1,5 +1,5 @@
 /**
- * AID
+ * HAKMI CELIA
  * Classe représentant une tempête dans la simulation.
  * Une tempête peut déplacer des ressources et perturber les agents.
  */
