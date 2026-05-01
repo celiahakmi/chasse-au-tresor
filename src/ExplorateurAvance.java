@@ -4,7 +4,7 @@ public class ExplorateurAvance extends Explorateur{
         super(t, l, c);
     }
 
-    public void agir() {
+    public void agir() throws HorsMerException {
         super.agir();
     }
 
