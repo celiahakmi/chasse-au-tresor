@@ -1,3 +1,9 @@
+/**
+ * HAKMI CELIA
+ * Classe abstraite représentant un agent générique dans la simulation.
+ * Définit les bases du mouvement et l'action commune à tous les explorateurs.
+ */
+
 public abstract class Agent{ 
     protected Terrain terrain;
     protected int lig;
