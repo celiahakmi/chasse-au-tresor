@@ -1,3 +1,9 @@
+/**
+ * HAKMI CELIA
+ * Classe principale gérant le déroulement de la chasse au trésor.
+ * Contrôle les tours de jeu, les agents et les événements aléatoires.
+ */
+
 import java.util.ArrayList;
 
 public class Simulation {
